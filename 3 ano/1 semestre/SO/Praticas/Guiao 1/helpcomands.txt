@@ -1,0 +1,3 @@
+ll file - mostrar data
+touch - altear data para atual
+g++ file- compilar file c++

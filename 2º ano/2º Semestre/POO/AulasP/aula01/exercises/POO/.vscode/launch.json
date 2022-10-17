@@ -1,0 +1,359 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch RandomTicketTester",
+            "request": "launch",
+            "mainClass": "small_evaluation.RandomTicketTester",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex_2",
+            "request": "launch",
+            "mainClass": "aula12.ex_2.ex_2",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex_1",
+            "request": "launch",
+            "mainClass": "aula12.ex_1",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex_2",
+            "request": "launch",
+            "mainClass": "aula11.ex_2.ex_2",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex_1",
+            "request": "launch",
+            "mainClass": "aula11.ex_1.ex_1",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex_4",
+            "request": "launch",
+            "mainClass": "aula10.ex_4",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex_3",
+            "request": "launch",
+            "mainClass": "aula10.ex_3",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex_2",
+            "request": "launch",
+            "mainClass": "aula10.ex_2",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex_1",
+            "request": "launch",
+            "mainClass": "aula10.ex_1",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch CollectionTester",
+            "request": "launch",
+            "mainClass": "aula09.ex_2.CollectionTester",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ALDemo_b",
+            "request": "launch",
+            "mainClass": "aula09.ex_1.ALDemo_b",
+            "projectName": "POO_7c67c5fb",
+            "vmArgs": "-enableassertions"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch KmToMiles",
+            "request": "launch",
+            "mainClass": "aula01.KmToMiles",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch MyFirstClass",
+            "request": "launch",
+            "mainClass": "aula01.MyFirstClass",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch PescadaDeRaboNaBoca",
+            "request": "launch",
+            "mainClass": "aula01.PescadaDeRaboNaBoca",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReadFileExample",
+            "request": "launch",
+            "mainClass": "aula01.ReadFileExample",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringExample",
+            "request": "launch",
+            "mainClass": "aula01.StringExample",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex1_km_to_miles",
+            "request": "launch",
+            "mainClass": "aula02.ex1_km_to_miles",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex2_degrees_to_fahrenheit",
+            "request": "launch",
+            "mainClass": "aula02.ex2_degrees_to_fahrenheit",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex3_calculate_energy",
+            "request": "launch",
+            "mainClass": "aula02.ex3_calculate_energy",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex4_calculate_fees",
+            "request": "launch",
+            "mainClass": "aula02.ex4_calculate_fees",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex5_average_speed",
+            "request": "launch",
+            "mainClass": "aula02.ex5_average_speed",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex6_seconds_to_date",
+            "request": "launch",
+            "mainClass": "aula02.ex6_seconds_to_date",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex7_distance",
+            "request": "launch",
+            "mainClass": "aula02.ex7_distance",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex8_pitagoras",
+            "request": "launch",
+            "mainClass": "aula02.ex8_pitagoras",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex1_calculate_grades",
+            "request": "launch",
+            "mainClass": "aula03.ex1_calculate_grades",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex2_down_counter",
+            "request": "launch",
+            "mainClass": "aula03.ex2_down_counter",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex3_prime_number",
+            "request": "launch",
+            "mainClass": "aula03.ex3_prime_number",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex4_values_info",
+            "request": "launch",
+            "mainClass": "aula03.ex4_values_info",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex5_investment_fees",
+            "request": "launch",
+            "mainClass": "aula03.ex5_investment_fees",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex6_validate_date",
+            "request": "launch",
+            "mainClass": "aula03.ex6_validate_date",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex7_high_low",
+            "request": "launch",
+            "mainClass": "aula03.ex7_high_low",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex8_improved_calc_grade",
+            "request": "launch",
+            "mainClass": "aula03.ex8_improved_calc_grade",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex1_string_methods",
+            "request": "launch",
+            "mainClass": "aula04.ex1_string_methods",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex2_string_operations",
+            "request": "launch",
+            "mainClass": "aula04.ex2_string_operations",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex3_string_acronyms",
+            "request": "launch",
+            "mainClass": "aula04.ex3_string_acronyms",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex4_calendar",
+            "request": "launch",
+            "mainClass": "aula04.ex4_calendar",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex_1_date",
+            "request": "launch",
+            "mainClass": "aula05.ex_1_date",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex_2",
+            "request": "launch",
+            "mainClass": "aula05.ex_2",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex_3",
+            "request": "launch",
+            "mainClass": "aula05.ex_3.ex_3",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex_1_test",
+            "request": "launch",
+            "mainClass": "aula06.ex_1_test",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex_2_test",
+            "request": "launch",
+            "mainClass": "aula06.ex_2_test",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex_1",
+            "request": "launch",
+            "mainClass": "aula07.ex_1.ex_1",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex_2(1)",
+            "request": "launch",
+            "mainClass": "aula07.ex_2.ex_2",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ex_2b",
+            "request": "launch",
+            "mainClass": "aula07.ex_2.ex_2b",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch main_1a",
+            "request": "launch",
+            "mainClass": "aula08.ex_1.main_1a",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch main_1b",
+            "request": "launch",
+            "mainClass": "aula08.ex_1.main_1b",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch A08E02",
+            "request": "launch",
+            "mainClass": "aula08.ex_2.A08E02",
+            "projectName": "POO_7c67c5fb"
+        },
+        {
+            "type": "java",
+            "name": "Launch ALDemo",
+            "request": "launch",
+            "mainClass": "aula09.ex_1.ALDemo",
+            "projectName": "POO_7c67c5fb",
+            "vmArgs": "-enableassertions"
+        }
+    ]
+}

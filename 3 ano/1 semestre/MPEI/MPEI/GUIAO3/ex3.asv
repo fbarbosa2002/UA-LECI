@@ -1,0 +1,7 @@
+%A)
+n = 20;
+T = rand(n);
+T2 = T./sum(T);
+T3 = T2';
+t4 = sum(T2(1,1:20))
+display(T2)

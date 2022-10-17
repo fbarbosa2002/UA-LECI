@@ -1,0 +1,16 @@
+big fish	78.0	PG-13	drama	125
+
+Matchstick Men	68.9	PG-13	comedy	116
+
+Intolerable Cruelty	67.1	PG-13	comedy	100
+
+The Italian Job	66.5	PG-13	action	111
+
+The Recruit	62.6	PG-13	suspense	115
+
+Deliver Us From Eva	61.8	R	comedy	105
+
+The Hulk	61.0	PG-13	action	138
+
+Willard	60.3	PG-13	horror	100
+

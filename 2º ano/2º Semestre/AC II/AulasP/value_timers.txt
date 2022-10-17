@@ -1,0 +1,21 @@
+t1//1,8,64,256
+others timers//1,2,4,8,16,32,64,256
+Calculos necesarios: 
+
+20 000 000/(65 536 * freq)= constante prescaler 
+
+next step:
+
+PR2 = ((20 000 000/(constante prescaler))/ freq) -1  
+
+2hz  -- 7//39 062
+4hz -- 7//19530
+6hz -- 6//52802
+8hz -- 6//39062
+10hz -- 5//62 499
+25hz -- 4//49 999
+50hz -- 3//49 999
+100Hz -- 2//49 999
+1000Hz -- 0//19 999
+timer1 5hz--2//62 499
+timer1 10Hz-- 2//31 249

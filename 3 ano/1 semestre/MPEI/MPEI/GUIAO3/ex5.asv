@@ -1,0 +1,13 @@
+%A) 
+T = [0.7 0.2 0.1;
+    0.2 0.3 0.5;
+    0.3 0.3 0.4];
+
+%B) dado dia 1 = sol, qual a prob de dia 2 = sol e dia 3 = sol
+
+probSol = 0.7*0.7;
+
+%C) dado dia 1 = sol, qual a prob de dia 2 = sol ou nuvens e dia 3 = sol ou
+%nuvens
+
+probNaoChuva = 0.7*(0.7 + 0.2) + 0.2*(0.2 + 0.3);

@@ -1,0 +1,9 @@
+%ex2
+
+experiencia2 = rand(15,10);
+
+lancamento = experiencia2 >0.5;
+
+resulexper = sum(lancamento)== 6;
+
+resultfinal= sum(resul)

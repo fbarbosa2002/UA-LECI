@@ -1,0 +1,29 @@
+//INTERRUPÇAO ADC
+
+IPC6bits.AD1IP = 1; // prioridade da interrupção A/D (1 a 6)
+IFS1bits.AD1IF = 0; // limpar pedido de interrupção A/D
+IEC1bits.AD1IE = 1; // ativar pedidos de interrupção A/D
+
+
+
+
+//INTERRUPÇAO TIMERS
+
+IPCxbits.TxIP = 1; // prioridade da interrupção (1 a 6)
+IFS0bits.TxIF = 0; // limpar pedido de interrupção do temporizador x
+IEC0bits.TxIE = 1; // ativar pedidos de interrupção do temporizador 
+
+
+
+
+
+
+///INTERRUPÇAO UART
+
+UxSTAbits.UTXISEL = 0; // quando se pede interrupção do lado tx (ver manual)
+UxSTAbits.URXISEL = 0; // quando se pede interrupção do lado rx (ver manual)
+IPCybits.UxIP = 1; // prioridade da interrupção (1 a 6)
+IFSybits.UxTXIF = 0; // limpar pedido de interrupção do lado tx
+IFSybits.UxRXIF = 0; // limpar pedido de interrupção do lado rx
+IECybits.UxTXIE = 0; // desativa pedidos de interrupção na transmissão
+IECybits.UxRXIE = 1; // ativa pedidos de interrupção na receção

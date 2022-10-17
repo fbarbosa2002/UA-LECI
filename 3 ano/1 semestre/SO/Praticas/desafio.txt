@@ -1,0 +1,2 @@
+lancar thread , experar outra para printar
+

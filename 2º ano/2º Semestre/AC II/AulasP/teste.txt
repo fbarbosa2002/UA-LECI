@@ -1,0 +1,2 @@
+uart escrever no ecra
+potenciometro com duty cycle

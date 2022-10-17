@@ -1,0 +1,24 @@
+
+Alínea 1) ----------------------------------
+
+Sabores Gostosos vai visitar 4 restaurantes
+A Volta do Churrasco vai visitar 3 restaurantes
+RESTAURANTES DE Sabores Gostosos: [Carvao em Brasa, Super Marios, Camarao Selvagem, Flower Taste]
+PASSEIOS DE VISITAS A Arquitetura Antiga: [Igreja Velha, Aqueduto]
+PASSEIOS DE VISITAS A Bares: [Copos e Conversas, Canequinhas]
+AGENCIA: Agencia Turistica Abaixo as Calorias
+	Atividades: [Atividade [num=201, nome=Arquitetura Antiga], Atividade [num=202, nome=Bares], Atividade [num=100, nome=A Volta do Churrasco], Atividade [num=102, nome=Sabores Gostosos]]
+TOTAL DE LOCAIS A VISITAR: 11
+
+Alínea 2) ----------------------------------
+
+AGENCIA: Agencia Turistica Tours4Eating
+	Atividades: [Atividade [num=20, nome=Igrejas], Atividade [num=11, nome=Pescarias], Atividade [num=22, nome=Departamentos], Atividade [num=10, nome=FingerFoodPlaces], Atividade [num=21, nome=Praias], Atividade [num=12, nome=SnackBars]]
+Atividade [num=20, nome=Igrejas]
+Atividade [num=11, nome=Pescarias]
+Atividade [num=22, nome=Departamentos]
+Atividade [num=10, nome=FingerFoodPlaces]
+Atividade [num=21, nome=Praias]
+Atividade [num=12, nome=SnackBars]
+-- LISTA DE LUGARES DA AGENCIA --
+Barra, CostaNova, DEGEIT, DETI, DFIS, IgrejaDeCima, IgrejaNova, IgrejaVelha, 

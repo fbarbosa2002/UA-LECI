@@ -1,0 +1,6 @@
+-> name='Duplex', genre='comedy', rating='PG-13', score='51.3', time='89'
+-> name='Old School', genre='comedy', rating='R', score='54.7', time='92'
+-> name='The Lizze McGuire Movie', genre='comedy', rating='PG', score='57.1', time='94'
+-> name='Intolerable Cruelty', genre='comedy', rating='PG-13', score='67.1', time='100'
+-> name='Deliver Us From Eva', genre='comedy', rating='R', score='61.8', time='105'
+-> name='Matchstick Men', genre='comedy', rating='PG-13', score='68.9', time='116'

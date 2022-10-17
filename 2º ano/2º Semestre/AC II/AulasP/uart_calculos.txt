@@ -1,0 +1,18 @@
+UxBRG = ((fPBCLK + 8 * baudrate) / (16 * baudrate)) – 1
+
+OU
+
+UxBRG = (fPBCLK / (16 * baudrate)) – 1 
+UxMODEbits.PDSEL = 0; // 0 (8N), 1 (8E), 2 (8O), 3 (9N) 
+UxModebits.STSEL = 0; // 0 (1 stop bits), 1 (2 stop bits)
+
+UxSTAbits.UTXEN = 1; // ativa transmissão (ver nota abaixo)
+UxSTAbits.URXEN = 1; // ativa receção (ver nota abaixo)
+
+UxMODEbits.ON = 1; // ativa UART
+
+putc////U2STAbits.UTXBF--U2TXREG=c
+
+Interrupts rececao////if IFS1bits.U2RXIF==1
+			while u2stabis.urxda==0
+			c=u2rxreg

@@ -1,0 +1,16 @@
+
+Alínea 1) ----------------------------------
+
+Team mates[Coimbra]
+The best[Aveiro]
+Cool bunch[Viseu]
+
+
+Events:
+null, lista=[Treino_Teste.Teste.Catering@3feba861]]Events:
+null, lista=[Treino_Teste.Teste.Sport@5b480cf9]]Events:
+null, lista=[Treino_Teste.Teste.Catering@6f496d9f]]Events:
+null, lista=[Treino_Teste.Teste.Sport@723279cf]]
+
+Alínea 2) ----------------------------------
+

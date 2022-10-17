@@ -1,0 +1,7 @@
+%Teorema de Bayes
+%p(A|B) = p(B|A)*p(A)/p(B)
+%p(E) = probabilidade de ocorrer um erro
+%p(A) = probabilidade do erro ser de carlos = 0.001
+%p(B) = probabilidade do erro ser de bruno = 0.05
+%p(C) = probabilidade do erro ser de andre
+%p(B|A) = 

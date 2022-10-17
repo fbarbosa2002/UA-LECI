@@ -1,0 +1,65 @@
+
+Alínea 1) ----------------------------------
+
+Clients: 
+Cool bunch [Viseu]
+Team mates [Coimbra]
+The best [Aveiro]
+
+
+Events: 
+Cool bunch [Viseu]
+*** Evento em 2022-06-25,total=1000 euros
+	Catering with 'Drinks and Snacks' option for 20 participants.
+	Art Museum with 20 participants.
+
+Team mates [Coimbra]
+*** Evento em 2022-06-30,total=1000 euros
+	Catering with 'Light bites' option for 20 participants.
+	Architectural tour with 10 participants.
+	River tour with 10 participants.
+
+The best [Aveiro]
+*** Evento em 2022-06-24,total=610 euros
+	Kayak sporting activity with 10 participants
+	Catering with 'Full Menu' option for 12 participants.
+
+*** Evento em 2022-07-10,total=775 euros
+	Bike sporting activity with 15 participants
+	Wine tasting with 20 participants.
+
+
+
+Alínea 2) ----------------------------------
+
+Fun & Sports: CLIENTES COM EVENTOS
+Malta da Ria [Aveiro]
+Malta da Ria [Aveiro]
+Régua e Esquadro [Espinho]
+Tudo Bons Rapazes [Águeda]
+Arrisca Tudo [Costa Nova]
+
+Fun & Sports: LISTA DE PRÓXIMOS EVENTOS ORDENADOS POR DATA
+*** Evento em 2022-07-01,total=800 euros
+	Art Museum with 16 participants.
+	Catering with 'Light bites' option for 16 participants.
+
+*** Evento em 2022-07-01,total=880 euros
+	Hiking sporting activity with 16 participants
+	Catering with 'Drinks and Snacks' option for 16 participants.
+
+*** Evento em 2022-07-11,total=1550 euros
+	River tour with 23 participants.
+	Bowling sporting activity with 16 participants
+	Catering with 'Drinks and Snacks' option for 23 participants.
+
+*** Evento em 2022-07-22,total=2005 euros
+	Hiking sporting activity with 28 participants
+	Bike sporting activity with 21 participants
+	Catering with 'Full Menu' option for 26 participants.
+
+*** Evento em 2022-07-13,total=880 euros
+	Hiking sporting activity with 16 participants
+	Catering with 'Drinks and Snacks' option for 16 participants.
+
+

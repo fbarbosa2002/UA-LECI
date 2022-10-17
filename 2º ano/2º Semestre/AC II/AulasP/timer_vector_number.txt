@@ -1,0 +1,5 @@
+timer 1 // 4
+timer 2 // 8
+timer 3 // 12
+adc // 27
+uart2 // 32

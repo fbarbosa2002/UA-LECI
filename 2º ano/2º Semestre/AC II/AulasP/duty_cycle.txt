@@ -1,0 +1,22 @@
+example: duty cycle 25 %
+	freq: 100Hz	
+	PR2= 49 999
+
+ton=	 0,25 * (1/100)= 0,0025
+
+f out_prescaler= 20 000 000/4= 5 000 000
+
+t out_prescaler= 1/5 000 000=0,000 000 2
+
+OC1RS= t on/ t out-prescaler
+	0,0025/0,000 000 2
+	12 500
+
+	OU
+
+OC1RS= ((PR2+1)*duty_cycle)/100
+
+OC1CONbits.OCM = 6;  
+OC1CONbits.OCTSEL =0; 
+OC1RS = duty_cyle_number; 
+OC1CONbits.ON = 1; 
