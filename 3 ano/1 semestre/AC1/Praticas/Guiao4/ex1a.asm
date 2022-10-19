@@ -29,8 +29,8 @@ main:	la	$a0,str
 	
 	li 	$t0,0
 	li	$t1,0
-	
-while:	la	$t2,str		# $t2 -> str ou &str[0]
+	la	$t2,str		# $t2 -> str ou &str[0]
+while:	
 	
 	addu	$t3,$t2,$t1
 	
@@ -42,7 +42,7 @@ while:	la	$t2,str		# $t2 -> str ou &str[0]
 if:	blt	$t4,'0',endif
 	bgt	$t4,'9',endif
 		
-	addiu	$t0,$t0,1
+	addi	$t0,$t0,1
 	
 endif:	
 	addiu	$t1,$t1,1
