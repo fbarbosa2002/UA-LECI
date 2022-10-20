@@ -6,17 +6,17 @@
 #	$t4 -> registo auxiliar 
 #	$t5 -> array
 #	$t6 -> counter 
+#	$t7 -> registo auxiliar 2
 
-
-#	Exercicio igual ao 3a mas onde os valores do array sao lidos do teclado	
+#	Exercicio igual ao 3a mas onde é possivel definir o tamanho do array e onde os valores do array sao lidos do teclado	
 	.data
 	
 array:	.space 16
 string:	.asciiz "\nIntroduza um numero: "
 string2:.asciiz "\nA soma do seu array e: "
+string3:.asciiz "\nTamanho do array: "
 	.eqv 	read_int,5
-	.eqv	print_int10,1
-	.eqv	SIZE,4	
+	.eqv	print_int10,1	
 	.eqv 	espaco,16
 	.eqv	print_string,4
 	
@@ -27,12 +27,20 @@ main:
 	la	$t5,array
 	li	$t3,0		# soma -> 0
 	li	$t6,0		# counter -> 0
-	li	$t4,SIZE
+	
+	
+	la	$a0,string3
+	li	$v0,print_string
+	syscall
+	li	$v0,read_int
+	syscall
+	move	$t4,$v0
+	move 	$t7,$v0
+	
 	sub	$t4,$t4,1
 	mul	$t4,$t4,4
-	
 while:	
-	bge	$t6,4,endw
+	bge	$t6,$t7,endw
 	
 	la	$a0,string
 	li	$v0,print_string
