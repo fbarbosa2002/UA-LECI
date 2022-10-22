@@ -9,7 +9,7 @@
 # Inteligência Artificial, 2014-2020
 #
 
-
+import math
 from tree_search import *
 
 class Cidades(SearchDomain):
@@ -29,9 +29,19 @@ class Cidades(SearchDomain):
         if C1==city:
             return C2
     def cost(self, city, action):
-        pass
+        a1,a2= action
+        assert city == a1
+
+        for(c1,c2,d) in self.connections:
+            if(c1,c2) == action or (c2,c1)== action:
+                return d
+
     def heuristic(self, city, goal_city):
-        pass
+        c1_x,c1_y = self.coordinates[city]
+        c2_x , c2_y = self.coordinates[goal_city]
+
+        return math.hypot(c1_x - c2_x , c1_y - c2_y)
+        
     def satisfies(self, city, goal_city):
         return goal_city==city
 
