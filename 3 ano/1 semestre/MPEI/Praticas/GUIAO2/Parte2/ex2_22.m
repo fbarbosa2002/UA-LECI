@@ -1,4 +1,6 @@
-% ex2a 
+% exercicio 2 -> parte 2.2
+
+% alinea a)
 
 % 90 notas de 5 // 9 notas de 50 // 1 nota de 100
 % 100 notas no total 
@@ -7,7 +9,7 @@
 % notas de 100 - 1/100 - 0.01
 
 
-% EX2B
+% alinea b)
 
 nr5 = 5 * ones(1,90);
 nr50 = 50 * ones(1,9);
@@ -21,16 +23,14 @@ experiencia1 = sum(aux2 == 5) / 100 ;
 experiencia2 = sum(aux2 == 50) / 100 ;
 experiencia3 = sum(aux2 == 100) / 100 ;
 
-disp('Probabilidade de sair uma nota de 5 e : ') ;
-disp(experiencia1) ;
+fprintf('Probabilidade de sair uma nota de 5 e : %1.4f\n',experiencia1) ;
 
-disp('Probabilidade de sair uma nota de 50 e : ') ;
-disp(experiencia2) ;
+fprintf('Probabilidade de sair uma nota de 50 e : %1.4f\n',experiencia2) ;
 
-disp('Probabilidade de sair uma nota de 100 e : ') ;
-disp(experiencia3) ;
 
-%ex2c
+fprintf('Probabilidade de sair uma nota de 100 e : %1.4f\n',experiencia3) ;
+
+% alinea c)
 
 x = [5 50 100] ;
 px= [90/100 9/100 1/100] ;

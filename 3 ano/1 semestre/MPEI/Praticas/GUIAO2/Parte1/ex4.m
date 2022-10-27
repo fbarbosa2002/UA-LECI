@@ -3,7 +3,7 @@
 
 % alinea a) 
 N = 1e5;
-for n = 0:100
+for n = 10:100
     
     aniversarios = randi([1,365],N,n);
     c = zeros(1,N);

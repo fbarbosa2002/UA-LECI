@@ -1,5 +1,7 @@
-%EX3A
+% exercicio 3 -> parte 2.2
 
+
+% alinea a)
 nrexperiencias = 1e6 ;
 
 for i = 0:4
@@ -10,7 +12,7 @@ end
 
 fprintf('\n');
 
-%EX3B
+% alinea b)
 
 % valor esperado = E[x]
 % E[X] = somatorio xi pxi
@@ -26,3 +28,5 @@ fprintf('\n');
 % var[x] = 5 -4 = 1
 % desvio padrao = sqrt(var[x])
 % desvio padrao = sqrt(1) = 1
+
+
