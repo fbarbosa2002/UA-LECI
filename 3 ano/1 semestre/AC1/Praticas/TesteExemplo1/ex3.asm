@@ -55,7 +55,7 @@ main:	li	$t0,0
 	mul	$t4,$t4,4	#N*4
 	add	$t5,$t4,$t2
 	
-for1:	bge	$t2,$t5,endfor1
+for1:	bne	$t2,$t5,endfor1
 	
 	li	$v0,read_int
 	syscall

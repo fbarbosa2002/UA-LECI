@@ -3,7 +3,9 @@
 
 
 X2:	.space 3
+
 X1:	.word 4
+X3:	.asciiz "ola"
 .text
 .globl main
 
