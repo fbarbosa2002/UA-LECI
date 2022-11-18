@@ -1,0 +1,95 @@
+
+<html>
+ 
+    <link href="{{ url_for('static', filename = 'css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename = 'css/consulta.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename = 'css/critics.css') }}" rel="stylesheet">
+
+    <body>
+        <section class="appointment-section">
+            <div class="container">
+                <div class="sec-title">
+                    <div class="title">Make an appointment</div>
+            
+                  </div>
+                  <div class="row clearfix">
+                  
+                    <!--Form Column-->
+                    <div class="form-column col-md-8 col-sm-12 col-xs-12">
+                        <div class="inner-column">
+                            
+                              <!-- Default Form -->
+                              <div class="default-form">
+                                      
+                                  <!--Contact Form-->
+                                  <form method="post" action="">
+                                      <div class="row clearfix">
+                                      
+                                          <div class="column col-md-6 col-sm-6 col-xs-12">
+                                              
+                                              <div class="form-group">
+                                                  <input type="text" name="name" placeholder="Name" required>
+                                              </div>
+                                              
+                                              <!--Form Group-->
+                                              <div class="form-group">
+                                                  <select class="custom-select-box" name ="picklist">
+                                                    {% for row in specialties %}
+                                                      <option>{{row[0]}}</option>
+                                                    {% endfor %}
+                                                  </select>
+                                              </div>
+                                              
+                                          </div>
+                                          
+                                          <div class="column col-md-6 col-sm-6 col-xs-12">
+                                            <div class="form-group">
+                                                <input type="date" class="datepicker" name="date" placeholder="Schedule Date" required>
+                                                <i class="far fa-calendar-alt"></i>
+                                            </div>
+                                              
+                                            <div class="form-group" >
+                                                {% if safe %}
+                                                <input style="width: 350px; height: 50px;" class="timepicker" type="time" name="time_appointment" placeholder="Schedule Time" required>
+                                                <i class="far fa-clock"></i>
+                                                {% else %}
+                                                <input style="width: 350px; height: 50px;" name="time_appointment" placeholder="Schedule Time in format  'hh:mm'" required>
+                                                {% endif %}
+
+                                            </div>
+                                              
+                                          </div>
+                                      
+                                          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-group">
+                                              <button class="theme-btn appointment-btn" type="submit" name="submit-form">Schedule an appointment</button>
+                                          </div>
+                                          
+                                      </div>
+                                  </form>
+                                      
+                              </div>
+                              <!--End Default Form -->
+                              
+                          </div>
+                      </div>
+                      
+                      <!--Form Column-->
+                    <div class="schedule-column col-md-4 col-sm-12 col-xs-12">
+                        <div class="inner-outer">
+                              <div class="inner-column">
+                                  <h2>Business Hours:</h2>
+                                  <ul class="time-list">
+                                      <li>Monday - Friday 9.00 AM - 5.00 PM</li>
+                                      <li>Saturday 9.00 AM - 3.00 PM</li>
+                                      <li><strong>Sunday Closed</strong></li>
+                                      <li class="closed">* Every 2nd, 4th Staurday and all got holidays are closed.</li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                      
+                  </div>
+              </div>
+          </section>
+    </body>
+</html>

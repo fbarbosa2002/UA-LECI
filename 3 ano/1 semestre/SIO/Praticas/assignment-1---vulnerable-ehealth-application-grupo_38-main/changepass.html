@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Change password</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="{{ url_for('static', filename = 'css/opinioes.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename = 'css/critics.css') }}" rel="stylesheet">
+	<link href="{{ url_for('static', filename = 'css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename = 'css/main.css') }}" rel="stylesheet">
+</head>
+
+<body>
+
+	    <!-- Fixed navbar -->
+		<nav class="navbar">
+			<li id= "nav-back"><a href="/welcome">Back</a></li>
+			<li id="nav-login"><a href="/logout">Log out</a></li>			
+		</nav>
+
+
+	<div class="login-page">
+		<div class="form">
+		  	<form class="login-form" action="" method="post">
+				<input type="text" placeholder="Username" name="username"/>
+				{% if safe %}
+				<input type="password" placeholder="Current password" name="current_password"/>
+				{% endif %}
+                <input type="password" placeholder="New Password" name="new_password"/>
+                <input type="password" placeholder="Repeat new Password" name="repeat_new_password"/>
+				<button type="submit" value="Login">Change password</button>
+				{% if error %}
+				<p class="error"><strong>Error:</strong> {{ error }}</p>
+			  	{% endif %}
+				
+				</p>
+		  	</form>
+		</div>
+	</div>
+	
+<!--===============================================================================================-->
+	<script src="{{ url_for('static', filename = 'js/Jquery.js') }}"></script>
+	<script language="JavaScript" type="text/javascript" src="{{ url_for('static', filename = 'js/main.js') }}"></script>
+<!--===============================================================================================-->
+
+
+</body>
+</html>

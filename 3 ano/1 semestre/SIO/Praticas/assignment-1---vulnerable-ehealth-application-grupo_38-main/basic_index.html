@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Site dos melhores do mundo</title>
+	<meta charset="UTF-8">
+
+<!--------------------------------------------------------------------->
+	<link rel="stylesheet" type="text/css" href="/static/css/main.css"/>
+	<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css.map"/>
+	<link href="" rel="stylesheet" media="screen">
+<!--------------------------------------------------------------------->
+	
+</head>
+<body>
+	<div class="login-page">
+		<div class="form">
+			
+			<form class="register-form" action = "basic_test.py">
+				<input type="text" placeholder="username" />
+				<input type="password" placeholder="password" />
+					<button>create</button>
+				<p class="message">Already registered? <a href="#">Sign In</a></p>
+		  	</form>
+
+		  	<form class="login-form" action="basic_server.py" method="get">
+				<input type="text" placeholder="username" name="username" id = "username" />
+				<input type="password" placeholder="password" name="password" id = "password" />
+					<button type="submit" value="Login">login</button>
+					{% if error %}
+        				<p class="error"><strong>Error:</strong> {{ error }}</p>
+      				{% endif %}
+				<p class="message">Not registered? 
+					<a href="#" type="lol">Create an account</a>
+				</p>
+		  	</form>
+
+		</div>
+	</div>
+	
+<!--===============================================================================================-->
+	<script type = "text/javascript" src="static/js/main.js"></script>
+	<script type = "text/javascript" src="static/js/Jquery.js"></script>
+	<script type = "text/javascript" src = "basic_main.js"></script>
+	
+<!--===============================================================================================-->
+
+
+</body>
+</html>

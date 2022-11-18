@@ -1,0 +1,190 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  height: 100%;
+  /*background: url(../img/hexagon.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+}
+
+body {
+  height: 100%;
+  font-family: 'Comfortaa', cursive;
+  background-color: #25b79f;
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Comfortaa', Helvetica, Arial, sans-serif;
+  color: #07374a;
+}
+
+p {
+  font-family: 'Quattrocento', serif;
+  color: #f0f0e6;
+}
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: transparent;
+  color: #f0f0e6;
+}
+
+.back-to-top {
+  display: none;
+}
+
+.back-to-top.visible {
+  display: block;
+} 
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container-fluid {
+  padding: 60px 15px 0;
+}
+.container-fluid .text-muted {
+  margin: 20px 0;
+}
+
+code {
+  font-size: 80%;
+}
+
+.cover {
+  padding: 16% 0 20% 0;
+}
+
+.cover.top {
+  height: 100vh;
+  display: flex;
+  background-color: #25b79f;
+}
+
+
+
+#about {
+  background-color: #07374a;
+  clear: both;
+}
+
+#portfolio {
+  background-color: #25b79f;
+}
+
+#contact {
+  background-color: #07374a;
+}
+
+
+/* Navbar styles
+-------------------------------------------------- */
+.navbar {
+  height: 70px;
+  background-color: transparent;
+  background: transparent;
+  border: none;
+  color: #f0f0e6;
+  z-index: 100;
+  margin-bottom: 0;
+  border-radius: 0;
+  transition: background-color 1s ease 0s;
+}
+
+/* Adjusting the brand and link colors */
+
+.navbar-brand {
+  display: none;
+  margin-top: 10px;
+  color: #f0f0e6;
+  font-weight: 500;
+}
+
+.navbar-nav > li > a {
+  color: #f0f0e6;
+  font-weight: 500;
+  font-size: 1em;
+  text-transform: lowercase;
+  margin: 10px 5px 5px 5px;
+  border-radius: 5px;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active {
+  color: #f0f0e6;
+  border: 1px solid #f0f0e6;
+}
+
+.navbar-nav > li > a:visited, .navbar-default .navbar-nav > li > a:focus {
+  color: #f0f0e6;
+  text-decoration: none;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+  background-color: transparent;
+  color: #f0f0e6;
+
+}
+
+/* Solid class which will be attached on scroll */
+
+.navbar.solid {
+  background-color: #07374a;
+  transition: background-color 1s ease 0s; 
+  box-shadow: 0 0 4px #969696;
+}
+.navbar.solid .navbar-brand {
+  display: inline-block;
+  color: #f0f0e6;
+  transition: color 1s ease 0s;
+}
+/*.navbar.opaque .navbar-nav > li > a {
+  color: #f0f0e6;
+  transition: color 1s ease 0s;
+}
+.navbar.opaque .navbar-nav > li > a:active {
+  text-decoration: none;
+}
+*/
+
+/* Icon styles
+-------------------------------------------------- */
+
+#scrollIcon {
+  margin-top: 200px;
+  padding: 10px;
+  font-size: 1.5em;
+  color: #034E53;
+  border: solid 2px #034E53;
+  border-radius: 50%;
+}
+
+#scrollTopIcon {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1em;
+  color: #f0f0e6;
+  border: solid 2px #f0f0e6;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+

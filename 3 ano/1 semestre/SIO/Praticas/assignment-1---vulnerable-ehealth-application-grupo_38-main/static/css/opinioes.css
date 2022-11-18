@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento");
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    outline: none;
+}
+body {
+    height: 100%;
+    font-family: "Comfortaa", Helvetica, Arial, sans-serif;
+    background-color: #25b79f;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px; 
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Comfortaa", Helvetica, Arial, sans-serif;
+  color: #07374a; }
+a,
+a:active,
+a:focus {
+    color: white;
+    text-decoration: none;
+    transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+    -ms-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    -o-transition-duration: .2s;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img {
+max-width: 100%;
+height: auto;
+}
+section {
+    padding: 60px 0;
+    min-height: 100vh;
+}
+.testimonials {
+padding: 120px 0 80px;
+}
+.testimonials .heading {
+margin-bottom: 60px;
+}
+.testimonials .heading h2 {
+font-size: 30px;
+font-weight: 700;
+color: #313e4b;
+margin-bottom: 20px;
+}
+.testimonials .heading h2 span {
+font-weight: 300;
+color: white;
+margin: 0;
+
+}
+.testimonials .heading p {
+font-size: 16px;
+font-weight: 300;
+line-height: 26px;
+margin: 0;
+color: white;
+}
+.testimonials .box {
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+padding: 40px;
+border-radius: 15px;
+margin-bottom: 40px;
+transition: all 0.4s ease-in-out;
+}
+.testimonials .box h3 {
+font-size: 18px;
+font-weight: 500;
+color: #ffffff;
+}
+.testimonials .box:hover {
+transform: translateY(-10px);
+}
+.testimonials .box h3 span {
+font-size: 13px;
+font-weight: 400;
+color: white;
+margin-left: 10px;
+}
+.testimonials .box p {
+font-size: 15px;
+font-weight: 300;
+line-height: 24px;
+margin: 0;
+color: white;
+margin-bottom: 20px;
+margin-top: 10px;
+padding-right: 20px;
+}
+.testimonials .box .image img {
+width: 200px;
+border-radius: 50%;
+margin: 0;
+padding: 0;
+display: inline-block;
+}
+.testimonials .box .icon {
+border: 1px solid #eee;
+color: white;
+width: 35px;
+height: 35px;
+border-radius: 50%;
+display: inline-block;
+margin-right: 10px;
+text-decoration: none;
+transition: all 0.3s ease-in-out;
+}
+.testimonials .box .icon:hover {
+color: #ffffff;
+border: 1px solid #ffffff;
+background: #ffffff;
+}

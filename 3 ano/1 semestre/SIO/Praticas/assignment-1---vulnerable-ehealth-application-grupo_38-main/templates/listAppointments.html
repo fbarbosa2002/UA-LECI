@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <title>eHealth Corp</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename = 'index/css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename = 'index/css/main.css') }}" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a style="color:white ;" href="/welcome">eHealth Corp</a>
+            </div><!--/.navbar-header -->
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li id="nav-portfolio"><a href="/doctors">Our doctors</a></li>
+                    <li id="nav-contact"><a href="/welcome#contact">Reviews</a></li>
+                    <li id="nav-login"><a href="/logout">Log out</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+  <div style="width: 80%; margin-left: 10%; margin-top: 20%;">
+    <form method="post">
+      <input type="text" name="searchAppointments"/>
+      <input type="submit" value="Search"/>
+    </form>
+    <table class="table table-striped bg-white text-dark">
+          <tr class="bg-secondary text-white">
+            <th scope="col">Name</th>
+            <th scope="col">Speciality</th>
+            <th scope="col">Date</th>
+            <th scope="col">Time</th>
+          </tr>
+          {% for row in appointments_list %}
+          <tr>
+            <td>{{row[0]}} </td>
+            <td>{{row[1]}} </td>
+            <td>{{row[2]}} </td>
+            <td>{{row[3]}} </td>
+          </tr>
+          {% endfor %}
+    </table>
+  </div>
+	
+<!--===============================================================================================-->
+
+<!--===============================================================================================-->
+
+
+</body>
+</html>

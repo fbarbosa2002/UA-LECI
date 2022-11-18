@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+    <title>Mitos de SIO</title>
+    <meta name="description" content="Our first page">
+    <meta name="keywords" content="html tutorial template">
+</head>
+<body>
+    <h1>Melhor projeto de SIO</h1>
+    <table border = 1></table>
+    <thead>
+        <td>First Name</td>
+        <td>Last Name</td>
+    </thead>
+    
+     {% for row in result %}
+    <tr>
+        <td> {{ row[1] }}</td>
+        <td> {{ row[2] }}</td>
+    </tr>
+    {% endfor %}
+
+    </table>
+</body>
+</html>

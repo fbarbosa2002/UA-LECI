@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="{{ url_for('static', filename = 'css/opinioes.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename = 'css/critics.css') }}" rel="stylesheet">
+
+
+    <title>eHealth Corp</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename = 'index/css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename = 'index/css/main.css') }}" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">eHealth Corp</a>
+            </div><!--/.navbar-header -->
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li id="nav-about"><a href="#about">About</a></li>
+                    <li id="nav-portfolio"><a href="#portfolio">Services</a></li>
+                    <li id="nav-contact"><a href="#contact">Reviews</a></li>
+                    <li id="nav-login"><a href="/login">Log in</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <!-- Begin page content -->
+    <div class="container-fluid">
+
+        <div class="row cover top">
+            <div class="col-xs-12">
+
+                <div class="row">
+                    <div class="col-xs-12 headline">
+                        <h1 class="text-center">Hi, we are a eHealth Corp</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12 center-block text-center">
+                        <a href="#about"><span id="scrollIcon" class="front-glyph glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+                    </div>
+                </div>
+
+            </div>
+        </div><!--/.row cover top -->
+
+
+        <div id="about" class="row cover">
+            <h2 class="text-center">About Us</h2>
+
+                <div class="col-md-6 text-center about-info">
+                    <img class="img-circle text-center profile-img" src="{{ url_for('static', filename = 'index/img/logoCorp.png') }}">
+
+                    <p class="text-center">We are a Health Corp, dedicated to make people health  </p>
+                </div><!--/.about-info -->
+
+                <div class="col-md-6 about-tools">
+                    <p class="text-center">Here's a few of the services we offer:</p>
+                    <div class="col-xs">
+                        <ul>
+                            <li>Appointments with doctors</li>
+                            <li>Download test results</li>
+                            <li>Videos</li>
+                            <li>Notifications</li>
+                        </ul>
+                    </div>
+
+                </div><!--/.about-tools -->
+
+                <div class="row break">
+                    <div class="col-md-6 about-last">
+                        <p class="text-center">Check out our latest works <span class="glyphicon glyphicon-arrow-down"></span></p>
+                    </div>
+                </div>
+
+        </div><!-- End #About -->
+
+        <div id="portfolio" class="row cover">
+            <h2 class="text-center">Portfolio</h2>
+            <div class="container">
+
+                <div class="row portfolio-projects"> <!-- Two project row-->
+
+                    <div class="col-lg"> <!--1st side project -->
+                        <div class="row">
+
+                            <div class="col-sm-5 text-center">
+                                <h4 class="portfolio-projects--title">eHealth Corp</h4>
+                                <p class="portfolio-projects--desc">A professional Corp that uses a internet to work with clients health</p>
+                            </div>
+
+                            <div class="col-sm-7 text-center">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/pc1jlelzmPY" title="YouTube video player" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div><!--end Two project row-->
+
+            </div>
+        </div><!-- End #Portfolio -->
+
+
+        <div id="contact" class="row cover bottom">
+
+            <!-- Begin of reviews section-->
+            
+            <section class="testimonials">
+                <div class="container">
+                    <div class="heading wow fadeIn text-center">
+                        <h2>Our
+                            <span>Testimonials</span></h2>
+                        <p>We let our work do the talking.
+                            <br>
+                            Check out some the opinions of our former clients:</p>
+                    </div>
+                    <div class="row">
+                        <!-- Box-1 -->
+                        {% if safe %}
+                        {% for op in opinions_list %}
+                        <div class="col-lg-6">
+                            <div class="box d-flex align-items-center wow fadeInLeft">
+                                <div class="content">
+                                    <h3>{{ op[0] }}</h3>
+                                    <p>{{ op[1] }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                        
+                        {% else %}
+                        {% for op in opinions_list %}
+                        {% autoescape false %}
+                        <div class="col-lg-6">
+                            <div class="box d-flex align-items-center wow fadeInLeft">
+                                <div class="content">
+                                    <h3>{{ op[0] }}</h3>
+                                    <p>{{ op[1] }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endautoescape %}
+                        {% endfor %}
+                        {% endif %}
+                        
+                        <section class="contact-page-section" style="display:inline-flex ;">
+                            <div class="container">
+                                <div class="sec-title">
+                                    <div class="title">Contact Us</div>
+                                        <h2>Let us know what you think</h2>
+                                    </div>
+                                    <div class="inner-container">
+                                    <div class="row clearfix">
+                                        
+                                        <!--Form Column-->
+                                            <div class="form-column col-md-8 col-sm-12 col-xs-12">
+                                            <div class="inner-column">
+                                                
+                                                    <!--Contact Form-->
+                                                    <div class="contact-form">
+                                                        <form method="post" action="" id="contact-form">
+                                                            <div class="row clearfix">
+                                                                <div class="form-group col-md-6 col-sm-6 co-xs-12">
+                                                                    <input type="text" name="name" value="" placeholder="name" required>
+                                                                </div>
+                                                                <div class="form-group col-md-12 col-sm-12 co-xs-12">
+                                                                    <textarea name="message" placeholder="message" required></textarea>
+                                                                </div>
+                                                                <div class="form-group col-md-12 col-sm-12 co-xs-12">
+                                                                    <button type="submit" class="theme-btn btn-style-one">Send Now</button>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <!--End Contact Form-->
+                                                    
+                                                </div>
+                                            </div>
+                                            
+                                            <!--Info Column-->
+                                            <div class="info-column col-md-4 col-sm-12 col-xs-12">
+                                            <div class="inner-column">
+                                                <h2>Contact Info</h2>
+                                                    <ul class="list-info">
+                                                    <li><i class=></i>eHealth Corp</li>
+                                                        <li><i class=></i>eHealthCorp@gmail.com</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        
+                    </div>
+                </div>
+            </section>
+            
+
+            <!-- End of reviews section-->
+
+            <h2 class="text-center contact-header">Contact Us</h2>
+            <p class="text-center contact-email">Get in touch with us <span class="glyphicon glyphicon-arrow-right"></span> eHealthCorp@gmail.com</p>
+
+        </div><!-- End #Contact -->
+
+    </div><!-- End .container-fluid -->
+
+    <footer class="footer">
+        <div class="container">
+            <p class="pull-right">&copy 2017 Erin Manahan</p>
+        </div>
+    </footer>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="{{ url_for('static', filename = 'index/js/bootstrap.min.js') }}"></script>
+<script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
+<script>
+
+    $(document).ready(function() {
+
+        // Transition effect for navbar and back-to-top icon
+        $(window).scroll(function() {
+            // checks if window is scrolled more than 500px, adds/removes solid class
+            if($(this).scrollTop() > 550) {
+                $('.navbar').addClass('solid');
+                $('.back-to-top').addClass('visible');
+            } else {
+                $('.navbar').removeClass('solid');
+                $('.back-to-top').removeClass('visible');
+            }
+        });
+
+        // Scrolling effect for Arrow icons
+        $("#scrollIcon").click(function(e) {
+            e.preventDefault();
+            $.scrollTo($("#about"), 1000);
+        });
+        $("#nav-about").click(function(e) {
+            e.preventDefault();
+            $.scrollTo($("#about"), 1000);
+        });
+        $("#nav-portfolio").click(function(e) {
+            e.preventDefault();
+            $.scrollTo($("#portfolio"), 1000);
+        });
+        $("#nav-contact").click(function(e) {
+            e.preventDefault();
+            $.scrollTo($("#contact"), 1000);
+        });
+        $(".navbar-brand").click(function(e) {
+            e.preventDefault();
+            $.scrollTo(0, 1000);
+        });
+
+    });
+
+</script>
+</body>
+</html>
