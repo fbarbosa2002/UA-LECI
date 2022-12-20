@@ -11,7 +11,9 @@ L4: .space 5
 .globl main
 
 # i -> $2
-main: jr $ra
+main: 	blt $3,0x123456,main
+
+	jr $ra
 
 	
 	
