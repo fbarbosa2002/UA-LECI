@@ -1,5 +1,3 @@
-	.data
-	
 	.text
 	
 exchange:		# *c1 -> $a0 // *c2 -> $a1
@@ -15,13 +13,13 @@ exchange:		# *c1 -> $a0 // *c2 -> $a1
 	
 	.text
 # Mapa de registos: 
-# str: $a0 -> $s0 (argumento é passado em $a0) 
+# str: $a0 -> $s0 (argumento ï¿½ passado em $a0) 
 # p1: $s1 (registo callee-saved) 
 # p2: $s2 (registo callee-saved) 
 # 
 strrev: 
-	addiu 	$sp,$sp,-16 # reserva espaço na stack 
- 	sw 	$ra,0($sp) # guarda endereço de retorno 
+	addiu 	$sp,$sp,-16 # reserva espaï¿½o na stack 
+ 	sw 	$ra,0($sp) # guarda endereï¿½o de retorno 
  	sw 	$s0,4($sp) # guarda valor dos registos 
  	sw 	$s1,8($sp) # $s0, $s1 e $s2 
  	sw 	$s2,12($sp) # 
@@ -48,11 +46,11 @@ while2: bge	$s1,$s2,endw2			# while(p1 < p2) {
  	
 endw2:
  	move 	$v0,$s0 # return str 
- 	lw 	$ra,0($sp) # repõe endereço de retorno 
- 	lw 	$s0,4($sp) # repõe o valor dos registos 
+ 	lw 	$ra,0($sp) # repï¿½e endereï¿½o de retorno 
+ 	lw 	$s0,4($sp) # repï¿½e o valor dos registos 
  	lw 	$s1,8($sp) # $s0, $s1 e $s2 
 	lw 	$s2,12($sp) # 
- 	addiu 	$sp,$sp,16 # liberta espaço da stack 
+ 	addiu 	$sp,$sp,16 # liberta espaï¿½o da stack 
  	jr	$ra # termina a sub-rotina 
  	
  	.data

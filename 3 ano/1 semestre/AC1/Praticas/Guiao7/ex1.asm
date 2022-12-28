@@ -1,4 +1,4 @@
-	.data
+
 
 	.text
 				# o argumento da funcao e passado em $a0
