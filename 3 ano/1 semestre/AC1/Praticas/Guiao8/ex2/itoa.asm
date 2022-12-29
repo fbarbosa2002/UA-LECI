@@ -4,7 +4,7 @@
 # s: $a2 -> $s2 
 # p: $s3 
 # digit: $t0 
-# Sub-rotina intermédia 
+# Sub-rotina intermï¿½dia 
 
 	
 	
@@ -12,11 +12,12 @@
 	
 	.globl itoa
 	
-itoa: 	addiu 	$sp,$sp,-16 # reserva espaço na stack 
- 	sw 	$s0,0($sp) # guarda registos $sx e $ra 
- 	sw	$s1,4($sp)
- 	sw	$s2,8($sp)
- 	sw	$s3,12($sp)
+itoa: 	addiu 	$sp,$sp,-20 # reserva espaï¿½o na stack 
+ 	sw 	$ra,0($sp)
+ 	sw 	$s0,4($sp) # guarda registos $sx e $ra 
+ 	sw	$s1,8($sp)
+ 	sw	$s2,12($sp)
+ 	sw	$s3,16($sp)
 	
 	move 	$s0,$a0 # copia n, b e s para registos 
  	move	$s1,$a1 # "callee-saved" 
@@ -39,11 +40,11 @@ enddo:	sb 	$0,0($s3) # *p = 0;
  	jal 	strrev # strrev( s ); 
  	move	$v0,$s2
  	
-
-	lw	$s0,0($sp)
- 	lw	$s1,4($sp)
- 	lw	$s2,8($sp)
- 	lw	$s3,12($sp) 
- 	addiu 	$sp,$sp,16 # liberta espaço na stack 
+	lw	$ra,0($sp)
+	lw	$s0,4($sp)
+ 	lw	$s1,8($sp)
+ 	lw	$s2,12($sp)
+ 	lw	$s3,16($sp) 
+ 	addiu 	$sp,$sp,20 # liberta espaï¿½o na stack 
 
  	jr 	$ra # 

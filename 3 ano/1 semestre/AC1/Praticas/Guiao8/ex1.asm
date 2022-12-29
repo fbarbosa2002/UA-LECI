@@ -2,28 +2,28 @@
 	
 atoi:	li	$t0,0		# res -> 0
 
-while_atoi:	
+while:	
 	
 	lb	$t1,0($a0)
 	
-	blt	$t1,'0',endw_atoi
-	bgt	$t1,'9',endw_atoi
+	blt	$t1,'0',endw
+	bgt	$t1,'9',endw
 	
 	
 	sub	$t2,$t1,'0'
 	addiu	$a0,$a0,1
 	mul	$t0,$t0,10
 	addu	$t0,$t0,$t2
-	j	while_atoi
+	j	while
 	
-endw_atoi:
+endw:
 	move	$v0,$t0
 	jr	$ra
 	
 	
 	.data
 	
-string:	.asciiz "10001 e 2024 sao anos bissextos"
+string:	.asciiz "2000 e 3000 sao anos bissextos"
 	.eqv	print_int10,1
 	.text
 	
