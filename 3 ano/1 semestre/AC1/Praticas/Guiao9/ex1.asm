@@ -16,7 +16,7 @@ do:	li	$v0,5
 	syscall
 	move	$t0,$v0		
 	mtc1	$t0,$f1		#	Move to Coprocessor 1	
-	cvt.s.w	$f1,$f1		#	Convert from integer to float
+	cvt.s.w	$f1,$f1		#	Convert  integer to float
 		
 	l.s	$f2,constfl
 	

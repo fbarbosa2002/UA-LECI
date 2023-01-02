@@ -34,7 +34,7 @@ for1:	blt 	$t2,$a2,endf1		# for(i = len_dst; i >= pos; i--)
 	
 	addu	$t3,$t2,$s0
 	lb	$t3,0($t3)
-	addu	$t4,$t2,$s2
+	addu	$t4,$t2,$s3
 	addu	$t4,$t4,$s0
 	sb	$t3,0($t4)		#  dst[i + len_src] = dst[i]; 
 
@@ -44,7 +44,7 @@ for1:	blt 	$t2,$a2,endf1		# for(i = len_dst; i >= pos; i--)
 endf1:
 
 	li	$t2,0
-for2:	bge	$t2,$s2,endf2
+for2:	bge	$t2,$s3,endf2
 	
 	addu	$t3,$t2,$s1
 	lb	$t3,0($t3)
