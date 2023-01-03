@@ -9,7 +9,7 @@
 	.eqv	print_float,2
 	.eqv	print_char,11
 
-str1:	.asciiz "Student "
+str1:	.asciiz "\nStudent "
 	
 	.text
 	
