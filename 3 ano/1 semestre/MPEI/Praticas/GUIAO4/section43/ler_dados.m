@@ -12,7 +12,7 @@ function [Set, Nu,users] = ler_dados(ficheiro)
     
     Set= cell(Nu,1); % Usa ce´lulas
     
-    for n = 1:Nu, % Para cada utilizador
+    for n = 1:Nu % Para cada utilizador
         % Obte´m os filmes de cada um
         ind = find(u(:,1) == users(n));
         % E guarda num array. Usa ce´lulas porque utilizador tem um nu´mero 
