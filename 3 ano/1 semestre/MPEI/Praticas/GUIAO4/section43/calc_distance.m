@@ -1,7 +1,7 @@
 function J = calc_distance(Set,Nu)
 % Calcula a distaˆncia de Jaccard entre todos os pares pela definic¸a˜o.
 
-    J=zeros(Nu,Nu); % array para guardar distaˆncias
+    J=zeros(Nu,Nu); % array para guardar distaˆnciasMinHash
     h= waitbar(0,'Calculating');
     for n1= 1:Nu
         waitbar(n1/Nu,h);

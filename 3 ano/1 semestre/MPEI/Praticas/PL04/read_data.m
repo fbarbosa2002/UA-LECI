@@ -22,4 +22,24 @@ for n = 1:Nf % Para cada utilizador
     Set{n} = [Set{n} u(ind,1)];
 end
 
-save database.mat usersids_films Set Nf films dict
+
+k = 100 ;
+MinHash = inf(Nf,k) ;
+
+for i = 1:Nf
+    actual_film = Set{i} ;
+    length_actual_film = length(actual_film) ;
+    
+    for j = 1: length_actual_film
+        % correr as funcoes de dispersao
+        chave = char(actual_film(j)) ;
+        hash = zeros(1,k);
+        for a = 1:k
+            chave = [chave num2str(a)];
+            hash(a) = DJB31MA(chave,127);
+        end
+        MinHash(i,:) = min([MinHash(i,:);hash]) ;
+    end
+end
+
+save database.mat usersids_films Set Nf films dict MinHash
