@@ -2,8 +2,6 @@
 load database
 
 menu_input = -1 ;
-%disp(MinHash(1:2,:))
-disp(MinHash(1000:1001,:))
 while menu_input ~= 5
     id_input = -1 ;
 
@@ -25,7 +23,7 @@ while menu_input ~= 5
     elseif menu_input == 3
         fprintf("Function 3\n")
     elseif menu_input == 4
-        fprintf("Function 4\n")
+        ex4(MinHashSig,films_dic)
     elseif (menu_input > 5 || menu_input < 1) 
         fprintf("Invalid input\n")
     end
@@ -78,3 +76,54 @@ function ex2(Nf,MinHash,id_input,Set,dict)
     end
 end
 
+function ex4(MinHashSig, dicFilms)
+    str = lower(input('\nSearch for a film: ', 's'));
+    shingle_size = 4;  
+    K = size(MinHashSig, 2);
+    threshold = 0.99; 
+
+    % Estrutura de cell array para os shingles
+    shinglestring = {};
+    for i = 1:length(str) - shingle_size + 1
+        aux = str(i:i+shingle_size-1);
+        shinglestring{i} = aux;
+    end
+
+    % criar MinHash para os shingles
+    MinHashString = inf(1,K);
+    for j = 1:length(shinglestring)
+        chave = char(shinglestring{j});
+        hash = zeros(1,K);
+        for kk = 1:K
+            chave = [chave num2str(kk)];
+            hash(kk) = DJB31MA(chave, 127);
+        end
+        MinHashString(1,:) = min([MinHashString(1,:); hash]);
+    end
+
+    % calcular a Distância de Jaccard
+    distJ = ones(1, size(dicFilms,1)); 
+    h = waitbar(0,'Calculating');
+    for i=1:size(dicFilms, 1)  
+        waitbar(i/K, h);
+        distJ(i) = sum(MinHashSig(i,:) ~= MinHashString)/K;
+    end
+    delete(h);
+    
+    flag = false;  
+    for i = 1:3
+        [val, pos] = min(distJ);  
+        if (val <= threshold)  
+            flag = true;
+            fprintf('ID: %d, nome: %s -> %f\n',pos, dicFilms{pos, 1},val);
+        end
+        distJ(pos) = 1;  
+    end
+    
+    if (~flag)
+        fprintf('No movies found.\n');
+    end
+    fprintf('\nPress enter to continue');
+
+    
+end

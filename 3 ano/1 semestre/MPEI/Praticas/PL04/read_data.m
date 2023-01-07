@@ -4,6 +4,8 @@ udata=load('u.data');   % Carrega o ficheiro dos dados dos filmes
 u= udata(1:end,1:3); 
 usersids_films = udata(1:end,1:2) ;
 dict = readcell('users.txt','Delimiter',';') ;
+
+films_dic = readcell('film_info.txt','Delimiter','\t') ;
 clear udata;
 
     % Lista de filmes
@@ -21,6 +23,9 @@ for n = 1:Nf % Para cada utilizador
     % diferente de filmes. Se fossem iguais podia ser um array
     Set{n} = [Set{n} u(ind,1)];
 end
+
+
+
 
 
 k = 100 ;
@@ -42,4 +47,28 @@ for i = 1:Nf
     end
 end
 
-save database.mat usersids_films Set Nf films dict MinHash
+shingle_size=3;
+K = 100;  % Número de funções de dispersão
+MinHashSig = inf(length(films_dic),K);
+for i = 1:length(films_dic)
+    conjunto = lower(films_dic{i,1});
+    shingles = {};
+    for j= 1 : length(conjunto) - shingle_size+1  % Criacao dos shingles para cada filme
+        shingle = conjunto(j:j+shingle_size-1);
+        shingles{j} = shingle;
+    end
+
+    for j = 1:length(shingles)
+        chave = char(shingles(j));
+        hash = zeros(1,K);
+        for kk = 1:K
+            chave = [chave num2str(kk)];
+            hash(kk) = DJB31MA(chave,127);
+        end
+        MinHashSig(i,:) = min([MinHashSig(i,:);hash]);  % Valor minimo da hash para este shingle
+    end
+end
+
+
+
+save database.mat usersids_films Set Nf films dict MinHash films_dic MinHashSig
