@@ -6,15 +6,14 @@ N = 1e5;
 n = 10;
 t = 1000;
 
-a = randi([1,t],N,n);
+a = randi([0,t-1],n,N) ;
 
-res = zeros(1,N);
+res = zeros(size(N));
 for i = 1:N
-    res(i) = length(unique(a(i,:)));
+    res(i) = length(unique(a(:,i))) ~= n;
 end
 
-result = res == 10;
-res = 1 - sum(result)/N;
+res = sum(res)/N;
 
 fprintf("Resultado alinea a): %1.4f\n",res);
 
@@ -22,12 +21,19 @@ fprintf("Resultado alinea a): %1.4f\n",res);
 
 % alinea b)
 
-loglog(t, res, 'r-*');
-xticks(t);
-yticks(0:100:1000);
-xlim([0, t])
-
-
-
+keys = 0:10:200;
+t = 10000 ;
+for j = 1:length(keys)
+    aux = keys(j) ;
+    a = randi([0,t-1],aux,N) ;
+    
+    res = zeros(size(N));
+    for i = 1:N
+        res(i) = length(unique(a(:,i))) ~= aux;
+    end
+    final_result(j) = sum(res) / N ;
+end
+disp(final_result)
+plot(keys,final_result)
 % alinea c)
 

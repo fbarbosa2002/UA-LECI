@@ -1,13 +1,15 @@
 %ex3
-N=100;
 
-experiencias = rand(15,N);
+N=10e5; % numero de experiencias 
+n = 15; % numero de lancamentos
+p = 0.5;% probabilidade de sair cara
+k = 6 ; % numero de caras
 
-lancamento = experiencias > 0.5;
+experiencias = rand(n,N) > p;
 
-result = sum(lancamento)>=6;
+result = sum(experiencias) >= k;
 
-resultfinal = sum(result)/100;
+resultfinal = sum(result)/N;
 
-resultemperc = resultfinal*100
+fprintf("\nEx3 ->\n\tProbabilidade de sair , pelo menos, 6 caras em 15 lançamentos: %.4f\n",resultfinal)
 

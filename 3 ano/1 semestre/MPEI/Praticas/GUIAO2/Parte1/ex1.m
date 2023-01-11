@@ -3,8 +3,11 @@
 % alinea a)
 
 N = 100000;
-
-experiencia = rand(2,N) > 0.5;
+n = 2; % 2 filhos cada familia
+       
+% 1 -> rapaz 
+% 0 -> rapariga
+experiencia = rand(n,N) > 0.5;
 
 resultado = sum(experiencia) >= 1;
 
@@ -26,9 +29,14 @@ fprintf("Resultado alinea b): %1.4f\n",valor_teorico);
 
 
 % alinea c)
+% Probabiliade condional -> qual a probabilidade de ter um filho rapaaz
+% sabendo que o outro ja é rapaz
+% P (A | B) = P (A e B) / P(B)
+% 
 
+n = 2; % numero de filhos
 
-exp = rand(2,N) > 0.5;
+exp = rand(n,N) > 0.5;
 
 exp1 = sum(exp)==2;
 
@@ -50,11 +58,12 @@ fprintf("Resultado alinea c)(Teorico): %1.4f\n", valor_teorico);
 
 
 
-exp = rand(1,N) > 0.5;
+exp = rand(2,N) > 0.5;
 
-expfinal = exp == 1;
+expfinal = exp(1,:) == 1;
+expb = sum(exp) == 2 ;
 
-result = sum(expfinal) / N;
+result = expb / expfinal;
 
 fprintf("Resultado alinea d): %1.4f\n", result);
 
