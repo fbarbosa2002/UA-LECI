@@ -7,7 +7,7 @@ nrexperiencias = 1e6 ;
 for i = 0:4
 
     matriz0 = sum(sum(rand(4,nrexperiencias) < 0.5) == i) / nrexperiencias ;
-    fprintf('f(%d)= %f ',i,matriz0);
+    fprintf('f(%d)= %1.4f\n',i,matriz0);
 end
 
 fprintf('\n');

@@ -15,7 +15,7 @@ nr5 = 5 * ones(1,90);
 nr50 = 50 * ones(1,9);
 nr100 = 100 * ones(1,1) ; 
 
-aux = horzcat(nr5,nr50,nr100) ;
+aux = [nr5,nr50,nr100] ;
 
 aux2 = aux(randperm(100)) ; % distribui aleatoriamente os numeros da matriz aux
 

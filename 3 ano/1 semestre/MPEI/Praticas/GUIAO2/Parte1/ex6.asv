@@ -30,11 +30,4 @@ fprintf("Resultado alinea c): %1.4f\n",calcl)
 % P(A|B) = P(A e B) / P(B)
 
 matriz = randi(3,2,numeroexperiencia);
-PAeB = sum(sum((matriz(1,:) == 1 & matriz(2,:) == 2) | (matriz(1,:) == 2 & matriz(2,:) == 1)))/numeroexperiencia;
-
-
-PB = sum(sum( matriz(2,:) == 2 | matriz(1,:) == 2 ))/numeroexperiencia;
-
-PAB = PAeB / PB ;
-
-fprintf("Resultado alinea d): %1.4f\n",PAB)
+calcl = sum((matriz(1,:) == 1 & matriz(2,:) == 2) | (matriz(1,:) == 2 & matriz(2,:) == 2))/numeroexperiencia;

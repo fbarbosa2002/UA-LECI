@@ -16,7 +16,7 @@
 %               GRUPO C -> GRUPO B : 1/2        -> t23
 %               GRUPO C -> GRUPO C : 1/2        -> t33
     
-T = [ 1/3 1/4 0 ; 1/3 11/20 1/2 ; 1/3 1/5 1/2];
+T = [ 1/3 1/4 0 ; 1/3 11/20 1/2 ; 1/3 1/5 1/2] ;
 
 % provar que e estocastica 
 
@@ -35,8 +35,12 @@ fprintf("\nSoma da matriz = %d %d\nA funcao e estocastica!\n", sum_T(1),sum_T(2)
 
 % b = c ;
 
-total = 90;
+v0 = [60 15 15; 60 15 15 ;60 15 15] ;
 
-v0 = [60 15 15]\total;
+v = (T^29) * v0 ;
 
-fprintf("Resposta alinea c: %1.1f %1.1f %1.1f\n", v0(1),v0(2),v0(3));
+sum(v)
+
+fprintf("Resposta alinea c: ");
+
+disp(sum(v))
