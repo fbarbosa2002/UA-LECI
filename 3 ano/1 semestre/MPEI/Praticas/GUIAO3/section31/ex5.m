@@ -13,4 +13,7 @@ v = [1;0;0];
 v2 = TT*v;
 v3 = TT*v;
 
-fprintf("Alinea b)\n : %1.4f, %1.4f\n",v2(1),v3(1))
+fprintf("Alinea b) : \n%1.4f, %1.4f\n",v2(1),v3(1))
+
+fprintf("Alinea c) : \n%1.4f, %1.4f\n",1 - v2(3), 1 - v3(3))
+
