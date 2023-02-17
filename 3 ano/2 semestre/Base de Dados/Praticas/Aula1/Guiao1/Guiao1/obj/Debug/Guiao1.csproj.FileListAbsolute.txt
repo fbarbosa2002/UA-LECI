@@ -1,0 +1,10 @@
+C:\Users\Geral\Documents\GitHub\UA-LECI\3 ano\2 semestre\Base de Dados\Praticas\Aula1\Guiao1\Guiao1\bin\Debug\Guiao1.exe.config
+C:\Users\Geral\Documents\GitHub\UA-LECI\3 ano\2 semestre\Base de Dados\Praticas\Aula1\Guiao1\Guiao1\bin\Debug\Guiao1.exe
+C:\Users\Geral\Documents\GitHub\UA-LECI\3 ano\2 semestre\Base de Dados\Praticas\Aula1\Guiao1\Guiao1\bin\Debug\Guiao1.pdb
+C:\Users\Geral\Documents\GitHub\UA-LECI\3 ano\2 semestre\Base de Dados\Praticas\Aula1\Guiao1\Guiao1\obj\Debug\Guiao1.csproj.AssemblyReference.cache
+C:\Users\Geral\Documents\GitHub\UA-LECI\3 ano\2 semestre\Base de Dados\Praticas\Aula1\Guiao1\Guiao1\obj\Debug\Guiao1.Form1.resources
+C:\Users\Geral\Documents\GitHub\UA-LECI\3 ano\2 semestre\Base de Dados\Praticas\Aula1\Guiao1\Guiao1\obj\Debug\Guiao1.Properties.Resources.resources
+C:\Users\Geral\Documents\GitHub\UA-LECI\3 ano\2 semestre\Base de Dados\Praticas\Aula1\Guiao1\Guiao1\obj\Debug\Guiao1.csproj.GenerateResource.cache
+C:\Users\Geral\Documents\GitHub\UA-LECI\3 ano\2 semestre\Base de Dados\Praticas\Aula1\Guiao1\Guiao1\obj\Debug\Guiao1.csproj.CoreCompileInputs.cache
+C:\Users\Geral\Documents\GitHub\UA-LECI\3 ano\2 semestre\Base de Dados\Praticas\Aula1\Guiao1\Guiao1\obj\Debug\Guiao1.exe
+C:\Users\Geral\Documents\GitHub\UA-LECI\3 ano\2 semestre\Base de Dados\Praticas\Aula1\Guiao1\Guiao1\obj\Debug\Guiao1.pdb
