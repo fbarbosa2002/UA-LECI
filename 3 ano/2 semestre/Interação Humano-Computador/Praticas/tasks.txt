@@ -1,0 +1,8 @@
+1.faz o sbc melhoria de ouro com jogadores da liga portuguesa
+2.Lista uma carta de um jogador frances da liga inglesa no mercado de transferencias
+3.Da quick sell no jogador com menos rating no teu clube
+4.Recupera o jogador que deste quick sell
+5.Altera o idioma da aplicacao
+6.Verifica qual a carta do marega mais barata no mercado no momento e compra
+7.Compra uma carta de troca de posicao e usa a num jogador a tua escolha
+8.Verifica quantas posicoes alternativas tem o jogador com rating mais elevado no teu clube
