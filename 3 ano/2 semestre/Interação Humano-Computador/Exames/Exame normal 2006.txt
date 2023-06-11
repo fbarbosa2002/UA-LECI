@@ -1,0 +1,4 @@
+1) Considere o problema da avaliação de interfaces de utilizador: 
+	
+	a) caracterize e compare os estilos de avaliação no laboratório e no campo referindo-se às suas vantagens e desvantagens 
+	b) considere as experiências controladas e cognitive walkthrough, descreva cada um destes métodos de avaliação e caracterize-os quanto à fase de projecto em que podem ser utilizados, os tipos de informação que fornecem, os recursos materiais e humanos que envolvem bem como relativamente a outros aspectos relevantes.

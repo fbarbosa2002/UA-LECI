@@ -1,0 +1,18 @@
+1- Considere os seguinte dispositivos de entrada: rato e touch screen:
+
+a) compare-os quanto às caracteristicas que considera mais relevantes do ponto de vista da sua usabilidade num sistema interactivo;
+
+b) dê exemplos de situações em qua cada um deles possa ser preferivel e justifique;
+
+
+
+2-De acordo com D. Meyhew (1999) o ciclo de vida do software interactivo inclui 3 fases sendo a primeira a Análise de Requisitos.
+  Esta fase é composta por várias tarefas; identifique-as e descreva-as sucintamente.
+
+
+
+3- Quanto à avaliação de interfaces de utilizador refira:
+
+a) os momentos em que pode ser realizada;
+
+b) os métodos que conhece descrevendo-os sucintamente.

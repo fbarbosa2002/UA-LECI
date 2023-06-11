@@ -1,0 +1,32 @@
+1- Utilizando a técnica conhecida por Hierachical Task Analysis apresente a análise de tarefas envolvidas na realização deste exame 
+(desde que recebe a 1ª parte até que entrega a 2ª parte) indicando as sub-tarefas e planos de execução.
+
+
+
+2- Comente a seguinte frase de Zoltan-Ford (1984) a propósito da utilização de linguagens naturais como estilo de diálogo 
+nas interfaces de utilizador:
+	"Just because people know how to drive a car does not mean they can drive cross-country without a map."
+
+
+
+3- Quanto à avaliação de interfaces refira-se:
+
+a) aos momentos em que pode ser realizada;
+
+b) aos diferentes estilos existentes;
+
+c) aos principais métodos que conhece;
+
+d) às caracteristicas de dois desses métodos.
+
+
+
+
+4- Relativamente aos sistemas de gestão de janelas, diga:
+
+a) quais são as tarefas básicas de um sistema de gestão de janelas?
+
+b) quais são os modos de implementação do mecanismo de gestão de janelas? Explique quais as vantagens e desvantagens de cada uma das implementações.
+
+c) qual a distribuição de tarefas no X-Windows?
+
